@@ -9,5 +9,6 @@ Bloodhound a peice of software that uses graph theory to reveal the hidden relat
 ---
 Once you have collcted data from either SharpHound or AzureHound both will generate JSON files and place them in a zip folder. Dragging and dropping that zip file on to the BloodHound GUI will import the data.
 # SharpHound
+[Download Link](https://github.com/BloodHoundAD/SharpHound)
 
 # AzureHound
