@@ -27,3 +27,20 @@ The command for this collection method is:
 The default run time is 2 hours, if another runtime is preferred if can be specified using: `C:\> SharpHound.exe --CollectionMethod Session --Loop --Loopduration HH:MM:SS`
 
 # AzureHound
+
+Used to gather data with in [Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/) and Azure AD
+
+## Installation
+### Dependencies
+* Az 
+* Azure AD
+* PowerShell 5.1 =<
+
+### Steps
+
+1. Set TLS to 1.2 using `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12`
+2. (Once Az is installed) import AzureHound with `Import-Module C:\path\to\AzureHound.ps1`
+3. Login using `Connect-AzAccount` AND `Connect-AzureAD`
+
+## Usage
+You can use AzureHound by entering `Invoke-AzureHound`
