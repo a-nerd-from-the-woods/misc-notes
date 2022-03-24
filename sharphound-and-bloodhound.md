@@ -9,6 +9,21 @@ Bloodhound a peice of software that uses graph theory to reveal the hidden relat
 ---
 Once you have collcted data from either SharpHound or AzureHound both will generate JSON files and place them in a zip folder. Dragging and dropping that zip file on to the BloodHound GUI will import the data.
 # SharpHound
+
 [Download Link](https://github.com/BloodHoundAD/SharpHound)
+
+## Basic Data Collection
+Running the SharpHound executable will collect a good amount of data. To do so run:
+
+`C:\> SharpHound.exe`
+
+## In-Depth Data Collection
+
+The more data BloodHound is give, the more likly is it to discorver an attack path. SharpHound has a function called *Session Loop Collection Method* This method of collection is useful when trying to aquire data on User sessions, since this data is quite volatile.
+
+The command for this collection method is:
+`C:\> SharpHound.exe --CollectionMethod Session --Loop`
+
+The default run time is 2 hours, if another runtime is preferred if can be specified using: `C:\> SharpHound.exe --CollectionMethod Session --Loop --Loopduration HH:MM:SS`
 
 # AzureHound
