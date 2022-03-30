@@ -10,6 +10,7 @@ Bloodhound a peice of software that uses graph theory to reveal the hidden relat
 Once you have collcted data from either SharpHound or AzureHound both will generate JSON files and place them in a zip folder. Dragging and dropping that zip file on to the BloodHound GUI will import the data.
 # SharpHound
 [Documentation](https://bloodhound.readthedocs.io/en/latest/data-collection/sharphound.html)
+
 [Download Link](https://github.com/BloodHoundAD/SharpHound)
 
 ## Basic Data Collection
@@ -28,6 +29,7 @@ The default run time is 2 hours, if another runtime is preferred if can be speci
 
 # AzureHound
 [Documentation](https://bloodhound.readthedocs.io/en/latest/data-collection/azurehound.html)
+
 Used to gather data with in [Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/) and Azure AD
 
 ## Installation
