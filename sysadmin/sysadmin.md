@@ -8,5 +8,8 @@
 
 
 #### Creating a *Nix USB 
+1. [BalenaEtcher](https://www.balena.io/etcher/)
+2. [Rufus](https://rufus.ie/en/)
+
 
 #### Creating a Windows USB
