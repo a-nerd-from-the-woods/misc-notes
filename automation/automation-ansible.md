@@ -24,7 +24,7 @@ Playbooks are written tasks for Ansible to push to specified targets. Here is an
     hosts: linux
     become: yes
     tasks:
-      - name: ensure apache is at the latest version
+      - name: ensure apache is installed
         yum:
           name: httpd
           state: present
