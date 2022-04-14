@@ -36,9 +36,7 @@ Playbooks are written tasks for Ansible to push to specified targets. Here is an
 
 # The `ansible.cfg` File
 
-This file is used to edit the settings of Ansible itself. The only setting that we are concerned with at this time is:
-`PUT SETTING HERE`
-
+This file is used to edit the settings of Ansible itself. The only setting we want to un-comment at this time is: `host_key_checking = False`
 
 
 
