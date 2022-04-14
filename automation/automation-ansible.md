@@ -33,3 +33,12 @@ Playbooks are written tasks for Ansible to push to specified targets. Here is an
           name: httpd
           state: started
 ```
+
+# The `ansible.conf` File
+
+This file is used to edit the settings of Ansible itself. The only setting that we are concerned with at this time is:
+`PUT SETTING HERE`
+
+
+
+
