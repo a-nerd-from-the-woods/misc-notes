@@ -1,4 +1,4 @@
-# Sysadmin Notes
+# General Device Setup
 
 ## Bootable Media
 ### Creating a Bootable USB
