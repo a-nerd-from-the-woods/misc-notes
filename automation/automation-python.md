@@ -18,11 +18,13 @@
 ##### Current API
 1. `run(YOUR_COMMAND)`
     * Runs the command, waits for completion returns a `CompletedProcess` instance.
+    * Here is an example of run being used to list the networking infomation on a *NIX system: `subprocess.run('ip addr', shell=True)`, note how the `shell` argument has been set to `True`. The command throws an error if it is not set to true.
 2. `Popen(YOUR_COMMAND)`
     * A flexible class for executing a command in a new process.
 ##### Older API (x < Python 3.5)
 1. `call(YOUR_COMMAND)`
     * Runs a command and then returns the status code.
+    * Here is an example of call being used to list the networking infomation on a *NIX system: `subprocess.run('ip addr', shell=True)`, note how the `shell` argument has been set to `True`. The command throws an error if it is not set to true.
 2. `check_call(YOUR_COMMAND)`
     * Runs a command and then raises `CalledProcessError()` if return code is not `0`.
 3. `check_output(YOUR_COMMAND)`
